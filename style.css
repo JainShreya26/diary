@@ -59,8 +59,13 @@ button:hover {
     margin-bottom: 10px;
 }
 
-.entry-date {
+.entry-username {
     font-weight: bold;
+}
+
+.entry-date, .entry-time {
+    margin-top: 5px;
+    font-weight: normal;
 }
 
 .entry-text {

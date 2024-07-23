@@ -5,21 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gratitude Diary</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+            margin-bottom: 0.5em;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>Gratitude Diary</h1>
+        <div style = "width:500px"><h3> There are many things that we can be grateful for. Some of these things can be big, but some can also be very small. These things also differ from one person to the next. Think about the past week and list up to five things in your life that you are grateful for: </h3>
+            </div>
         <form id="gratitudeForm">
+            <label for="username">Your Name:</label>
+            <input type="text" id="username" name="username" required><br><br>
             <label for="date">Date:</label>
             <input type="date" id="date" name="date" required><br><br>
-            <label for="entry">Gratitude Entry:</label>
-            <textarea id="entry" name="entry" rows="4" cols="50" required></textarea><br><br>
+            
+            <div class="entry-group">
+                <h3>Enter Your Gratitude Entries</h3>
+                <div id="error1" class="error-message"></div>
+                <!-- <label for="entry1">Entry:</label> -->
+                1. 
+                <textarea id="entry1" name="entry1" rows="4" cols="50" required></textarea><br><br>
+            </div>
+
+            <div class="entry-group">
+                <!-- <h2>Gratitude Entry 2</h2> -->
+                <div id="error2" class="error-message"></div>
+                <!-- <label for="entry2">Entry:</label> -->
+                 2. 
+                <textarea id="entry2" name="entry2" rows="4" cols="50" required></textarea><br><br>
+            </div>
+
+            <div class="entry-group">
+                <!-- <h2>Gratitude Entry 3</h2> -->
+                <div id="error3" class="error-message"></div>
+                <!-- <label for="entry3">Entry:</label> -->
+                 3. 
+                <textarea id="entry3" name="entry3" rows="4" cols="50" required></textarea><br><br>
+            </div>
+
+            <div class="entry-group">
+                <!-- <h2>Gratitude Entry 4</h2> -->
+                <div id="error4" class="error-message"></div>
+                <!-- <label for="entry4">Entry:</label> -->
+                 4. 
+                <textarea id="entry4" name="entry4" rows="4" cols="50" required></textarea><br><br>
+            </div>
+
+            <div class="entry-group">
+                <!-- <h2>Gratitude Entry 5</h2> -->
+                <div id="error5" class="error-message"></div>
+                <!-- <label for="entry5">Entry:</label> -->
+                 5. 
+                <textarea id="entry5" name="entry5" rows="4" cols="50" required></textarea><br><br>
+            </div>
+
             <button type="button" id="submitBtn">Submit</button>
             <button type="button" id="nextBtn">Saved Entries</button>
         </form>
-        <hr>
-        <h2>Previous Entries</h2>
-        <div id="entries"></div>
     </div>
     <script src="script.js"></script>
 </body>
